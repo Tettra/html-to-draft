@@ -1,0 +1,8 @@
+{
+  "short_name": "html-to-draft",
+  "name": "html-to-draft",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
