@@ -1,6 +1,6 @@
 {
   "name": "html-to-draft",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "parse html to draft js content state",
   "author": "juliankrispel",
   "license": "MIT",
@@ -24,6 +24,7 @@
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
+    "draft-js": "^0.10.5",
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
@@ -58,8 +59,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "draft-js": "^0.10.5"
-  }
+  ]
 }
