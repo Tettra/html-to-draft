@@ -9,13 +9,9 @@ const blockTypes = {
   'H4': 'header-four',
   'H5': 'header-five',
   'H6': 'header-six',
-  'IMG': 'image',
   'LI': 'unordered-list-item',
   'BLOCKQUOTE': 'blockquote',
   'PRE': 'code-block',
-  'CODE': 'code-block',
-  'DIV': 'unstyled',
-  'P': 'unstyled',
   'IMG': 'atomic'
 }
 
@@ -24,7 +20,7 @@ const textDecorations = {
   'line-through': 'STRIKETHROUGH'
 }
 
-const boldValues = ['bold', 'bolder', '500', '600', '700', '800', '900'];
+const boldValues = ['bold', 'bolder', '500', '600', '700', '800', '900']
 
 const inlineStyleTags = {
   b: 'BOLD',
@@ -35,7 +31,7 @@ const inlineStyleTags = {
   s: 'STRIKETHROUGH',
   strike: 'STRIKETHROUGH',
   strong: 'BOLD',
-  u: 'UNDERLINE',
+  u: 'UNDERLINE'
 }
 
 type RawDraftContentState = {
@@ -60,14 +56,6 @@ type RawDraftContentState = {
     mutability: 'MUTABLE' | 'IMMUTABLE' | 'SEGMENTED',
     data: ?{[key: string]: any},
   }},
-}
-
-const inlineNodeNames = ['SPAN', 'A', 'EM', 'B', 'I']
-const blockNodeNames = ['P', 'DIV']
-const isBlock = element => {
-  return Array.from(element.children).some(el => {
-    return inlineNodeNames.includes(el.nodeName)
-  }) && element.textContent.length > 0
 }
 
 type TextFragment = {
@@ -95,34 +83,71 @@ type TextBlock = {
   data: ?Object,
 }
 
+type Block = TextBlock | AtomicBlock
+
 class RawDraftContent {
   entityKey: number
   content: RawDraftContentState
 
   constructor(options) {
-    this.entityKey = 0;
+    this.entityKey = 0
+    this.offset = 0
+
     if (options && options.parseBlock != null) {
       this.customParseBlock = options.parseBlock
     }
+
     if (options && options.parseTextFragment != null) {
       this.customParseTextFragment = options.parseTextFragment
     }
-    this.content = this.defaultContent = { blocks: [], entityMap: {} }
+
+    this.content = this.defaultContent = { blocks: [{ text: '' }], entityMap: {} }
   }
 
-  addBlock = (block) => {
+  addText = (text) => {
+    const lastBlock = this.content.blocks[this.content.blocks.length - 1]
+    if (lastBlock.text == null) {
+      lastBlock.text = ''
+    }
+
+    lastBlock.text += text
+    this.offset += text.length
+  }
+
+  addBlock = ({ entity, ...block }) => {
+    if (block.type === 'atomic') {
+      block.text = ' '
+    } else if (block.text == null) {
+      block.text = ''
+    }
+
+    if (entity != null) {
+      if (block.entityRanges == null) {
+        block.entityRanges = []
+      }
+
+      block.entityRanges.push({
+        offset: 0,
+        length: 1,
+        key: this.addEntity(entity)
+      })
+    }
+
     const index = this.content.blocks.push(block)
+
+    this.offset = 0
+
     return this.content.blocks[index - 1]
   }
 
-  addEntity = (entity: RawDraftEntity): string => {
+  addEntity = (entity: Object): string => {
     const key = this.entityKey
     this.content.entityMap[key.toString()] = entity
-    this.entityKey+= 1
+    this.entityKey += 1
     return key.toString()
   }
 
-  parseTextFragment = (element, offset = 0) => {
+  parseTextFragment = (element, offset = 0): TextFragment => {
     let textFragment = null
 
     if (this.customParseTextFragment != null) {
@@ -134,9 +159,12 @@ class RawDraftContent {
 
     if (textFragment == null) {
       const inlineStyle = inlineStyleTags[element.nodeName.toLowerCase()]
-      const fontWeight = element.style.fontWeight
-      const textDecoration = element.style.textDecoration
-      const fontStyle = element.style.fontStyle
+      const fontWeight = element.style && element.style.fontWeight
+      const textDecoration = element.style && element.style.textDecoration
+      const fontStyle = element.style && element.style.fontStyle
+      const fontFamily = element.style && element.style.fontFamily
+
+      textFragment = {}
 
       if (inlineStyle != null) {
         textFragment = { inlineStyle }
@@ -148,13 +176,30 @@ class RawDraftContent {
         textFragment = { inlineStyle: 'ITALIC' }
       } else if (inlineStyle == null && textDecorations[textDecoration] != null) {
         textFragment = { inlineStyle: textDecorations[textDecoration] }
+      } else if (inlineStyle == null && fontFamily === 'monospace') {
+        textFragment = { inlineStyle: 'CODE' }
+      }
+
+      if (element.nodeName === 'A' && element.attributes.href != null) {
+        textFragment = {
+          ...textFragment,
+          entity: {
+            type: 'LINK',
+            mutability: 'MUTABLE',
+            data: {
+              url: element.getAttribute('href'),
+              alt: element.getAttribute('rel'),
+              title: element.getAttribute('title')
+            }
+          }
+        }
       }
     }
 
     return textFragment
   }
 
-  parseBlock = (element) => {
+  parseBlock = (element): Block => {
     let blockType = blockTypes[element.nodeName]
     let block = { }
 
@@ -168,7 +213,8 @@ class RawDraftContent {
           type: 'IMAGE',
           mutability: 'IMMUTABLE',
           data: {
-            src: element,
+            src: element.getAttribute('src'),
+            alt: element.getAttribute('alt')
           }
         }
       }
@@ -183,88 +229,61 @@ class RawDraftContent {
       }
     }
 
+    if (Object.keys(block).length === 0) {
+      return null
+    }
+
     return block
   }
 
-  traverseInlineElement = (block, element, offset = 0) => {
-    let parsedTextFragment = this.parseTextFragment(element, offset)
-    if (parsedTextFragment != null) {
-      parsedTextFragment = { ...parsedTextFragment }
+  addInlineStyleRange = inlineStyleRange => {
+    const lastBlock = this.content.blocks[this.content.blocks.length - 1]
 
-      if (parsedTextFragment.inlineStyle != null) {
-        block.inlineStyleRanges.push({
-          style: parsedTextFragment.inlineStyle,
-          offset,
-          length: element.textContent.length
-        })
-      }
-
-      if (parsedTextFragment.entity != null) {
-        block.entityRanges.push({
-          key: this.addEntity(parsedTextFragment.entity),
-          offset,
-          length: element.textContent.length
-        })
-      }
+    if (lastBlock.inlineStyleRanges == null) {
+      lastBlock.inlineStyleRanges = []
     }
 
-    Array.from(element.children).reduce((index, child) => {
-      this.traverseInlineElement(block, child, index)
-      return child.textContent.length + index
-    }, offset)
+    lastBlock.inlineStyleRanges.push(inlineStyleRange)
   }
 
-  traverseBlock = (element) => {
-    let block = {}
+  addEntityRange = entity => {
+    const lastBlock = this.content.blocks[this.content.blocks.length - 1]
 
-    const { entity, ...parsedBlock } = this.parseBlock(element)
-
-    if (parsedBlock != null) {
-      block = {
-        ...parsedBlock,
-        inlineStyleRanges: [],
-        entityRanges: [],
-      }
+    if (lastBlock.entityRanges == null) {
+      lastBlock.entityRanges = []
     }
 
-    block = {
-      ...block,
-      text: block.type == null || block.type.toLowerCase() !== 'atomic' ? element.textContent : ' '
-    }
-
-    if (entity != null && block.type === 'atomic') {
-      block.entityRanges.push({
-        key: this.addEntity(entity),
-        offset: 0,
-        length: 1
-      })
-    }
-
-    const newBlock = this.addBlock({
-      ...block,
-    })
-
-    const startIndex = 0
-
-    Array.from(element.children).reduce((index, child) => {
-      this.traverseInlineElement(newBlock, child, index)
-      return index + child.textContent.length
-    }, startIndex)
+    lastBlock.entityRanges.push(entity)
   }
 
   traverseChildren = (node) => {
-    Array.from(node.children).forEach(element => {
-      if (isBlock(element)) {
-        this.traverseBlock(element)
-      } else {
-        const parsedBlock = this.parseBlock(element)
+    Array.from(node.childNodes).forEach(element => {
+      const parsedBlock = this.parseBlock(element)
+      const parsedTextFragment = this.parseTextFragment(element)
 
-        if (parsedBlock.type != null) {
-          this.traverseBlock(element)
-        } else {
-          this.traverseChildren(element)
+      if (parsedBlock) {
+        this.addBlock(parsedBlock)
+      } else if (element.nodeName === '#text' && element.textContent != null) {
+        this.addText(element.textContent)
+      } else if (parsedTextFragment) {
+        if (parsedTextFragment.inlineStyle != null) {
+          this.addInlineStyleRange({
+            style: parsedTextFragment.inlineStyle,
+            offset: this.offset,
+            length: element.textContent.length
+          })
+        }
+
+        if (parsedTextFragment.entity != null) {
+          this.addEntityRange({
+            key: this.addEntity(parsedTextFragment.entity),
+            offset: this.offset,
+            length: element.textContent.length
+          })
         }
       }
+
+      if (element.childNodes != null && (parsedBlock == null || parsedBlock.type !== 'atomic')) { this.traverseChildren(element) }
     })
   }
 
@@ -277,7 +296,6 @@ class RawDraftContent {
 }
 
 const convertFromHTML = (html: string, options?: { parseBlock?: Function, parseTextFragment?: Function }) => {
-  console.log('convert from html')
   const contentState = new RawDraftContent(options)
   return contentState.convert(html)
 }

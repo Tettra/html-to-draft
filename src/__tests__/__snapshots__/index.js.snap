@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertFromHtml converts code blocks from dropbox paper 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "codeBlockPaper.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts code blocks from github 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "githubCodeBlock.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts image 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "image.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts inline code 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "inlineCode.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts ordered lists 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "orderedList.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts rich text with headers 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "richTextWithHeaders.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts rich text with headers and links 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "richTextWithHeadersAndLinks.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts table 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "table.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts unorderd list with links from github 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "unorderedListWithLinksFromGithub.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts unordered lists 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "unorderedList.txt",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;

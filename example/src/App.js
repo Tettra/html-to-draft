@@ -8,7 +8,7 @@ import 'draft-js/dist/Draft.css'
 import example from './example'
 
 const parseBlock = (element) => {
-  console.log('element', element.nodeName)
+  //console.log('element', element.nodeName)
   if (element.nodeName === 'BR') {
     return {
       type: 'unstyled'
@@ -28,6 +28,7 @@ export default class App extends Component {
         <Editor
           handlePastedText={(text, html) => {
             if (html) {
+              console.log('html', html)
               this.setState({ editorState: EditorState.push(this.state.editorState, convertFromRaw(convertFromHtml(html, { parseBlock }))) });
             }
             return 'handled'
