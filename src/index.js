@@ -12,14 +12,14 @@ const blockTypes = {
   'LI': 'unordered-list-item',
   'BLOCKQUOTE': 'blockquote',
   'PRE': 'code-block',
-  'IMG': 'atomic'
+  'IMG': 'atomic',
+  'P': 'unstyled'
 }
 
 const textDecorations = {
   underline: 'UNDERLINE',
   'line-through': 'STRIKETHROUGH'
 }
-
 const boldValues = ['bold', 'bolder', '500', '600', '700', '800', '900']
 
 const inlineStyleTags = {
@@ -203,6 +203,10 @@ class RawDraftContent {
     let blockType = blockTypes[element.nodeName]
     let block = { }
 
+    if (element.parentElement.nodeName === 'LI') {
+      return null
+    }
+
     if (element.nodeName === 'LI' && element.parentNode.nodeName === 'OL') {
       blockType = 'ordered-list-item'
     }
@@ -283,7 +287,9 @@ class RawDraftContent {
         }
       }
 
-      if (element.childNodes != null && (parsedBlock == null || parsedBlock.type !== 'atomic')) { this.traverseChildren(element) }
+      if (element.childNodes != null && (parsedBlock == null || parsedBlock.type !== 'atomic')) {
+        this.traverseChildren(element)
+      }
     })
   }
 

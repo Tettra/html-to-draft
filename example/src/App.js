@@ -14,6 +14,8 @@ const parseBlock = (element) => {
       type: 'unstyled'
     }
   }
+
+  return null
 }
 
 export default class App extends Component {
@@ -22,13 +24,14 @@ export default class App extends Component {
   }
 
   render () {
-    console.log(convertToRaw(this.state.editorState.getCurrentContent()))
+    // console.log(convertToRaw(this.state.editorState.getCurrentContent()))
     return (
       <div>
         <Editor
           handlePastedText={(text, html) => {
             if (html) {
-              console.log('html', html)
+              // console.log('html', html)
+              console.log('converterd', convertFromHtml(html, { parseBlock }))
               this.setState({ editorState: EditorState.push(this.state.editorState, convertFromRaw(convertFromHtml(html, { parseBlock }))) });
             }
             return 'handled'
