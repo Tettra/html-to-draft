@@ -1,8 +1,5 @@
 # html-to-draft
 
-
-
-
 > parse html to draft js content state
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -11,6 +8,8 @@
 ![module formats: cjs, and es](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20es-green.svg?style=flat-square)
 [![NPM](https://img.shields.io/npm/v/html-to-draft.svg)](https://www.npmjs.com/package/html-to-draft)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Tested on latest versions of Firefox, Chrome, Safari
 
 ## Install
 
