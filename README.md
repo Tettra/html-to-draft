@@ -1,8 +1,11 @@
 # html-to-draft
 
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![GitHub code size in bytes](http://img.badgesize.io/https://unpkg.com/html-to-draft/dist/index.js?label=size&style=flat-square)
 ![Build Status](https://travis-ci.org/juliankrispel/html-to-draft.svg?branch=master)
+![module formats: cjs, and es][https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20es-green.svg?style=flat-square]
 
 > parse html to draft js content state
 
