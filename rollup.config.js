@@ -4,7 +4,7 @@ import external from 'rollup-plugin-peer-deps-external'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 import svgr from '@svgr/rollup'
-import { terser } from "rollup-plugin-terser";
+import { terser } from 'rollup-plugin-terser'
 
 import pkg from './package.json'
 
@@ -21,7 +21,7 @@ const outputs = [
   }
 ]
 
-const config ={
+const config = {
   input: 'src/index.js',
   external: ['draft-js/lib/getSafeBodyFromHTML'],
   plugins: [
@@ -34,9 +34,9 @@ const config ={
       plugins: [ '@babel/proposal-class-properties' ]
     }),
     resolve(),
-    commonjs(),
+    commonjs()
   ]
-} 
+}
 
 export default outputs.map(output => ({
   ...config,
