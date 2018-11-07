@@ -1,6 +1,6 @@
 {
   "name": "html-to-draft",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "parse html to draft js content state",
   "author": "juliankrispel",
   "license": "MIT",
