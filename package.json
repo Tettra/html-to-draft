@@ -4,7 +4,7 @@
   "description": "parse html to draft js content state",
   "author": "juliankrispel",
   "license": "MIT",
-  "repository": "juliankrispel/html-to-draft",
+  "repository": "tettra/html-to-draft",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
