@@ -60,4 +60,6 @@ type TextBlock = {
 
 ## License
 
-MIT © [juliankrispel](https://github.com/juliankrispel)
+MIT © [tettra](https://github.com/tettra)
+
+Developed by [Julian Krispel](https://reactrocket.com)
