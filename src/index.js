@@ -203,6 +203,11 @@ class RawDraftContent {
     let blockType = blockTypes[element.nodeName]
     let block = { }
 
+    // This is for paper code blocks
+    if (element.nodeName === 'CODE' && element.parentElement.textContent.length === element.textContent.length) {
+      blockType = 'code-block'
+    }
+
     if (element.parentElement.nodeName === 'LI') {
       return null
     }
@@ -293,10 +298,27 @@ class RawDraftContent {
     })
   }
 
+  groupCodeBlocks = () => {
+    this.content.blocks = this.content.blocks.reduce((acc, block) => {
+      const blocks = acc.slice(0, -1)
+      const lastBlock = acc.slice(-1)[0]
+
+      if (block.type === 'code-block' && lastBlock != null && lastBlock.type === 'code-block') {
+        return [...blocks, {
+          ...lastBlock,
+          text: lastBlock.text + '\n' + block.text
+        }]
+      } else {
+        return [...acc, block]
+      }
+    }, [])
+  }
+
   convert = (html) => {
     this.content = this.defaultContent
     const node = getSafeBodyFromHTML(html)
     this.traverseChildren(node)
+    this.groupCodeBlocks()
     return this.content
   }
 }

@@ -4,7 +4,52 @@ exports[`convertFromHtml converts code blocks from dropbox paper 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "codeBlockPaper.txt",
+      "text": "
+  
+    ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 12,
+          "style": "CODE",
+        },
+        Object {
+          "length": 22,
+          "offset": 47,
+          "style": "CODE",
+        },
+      ],
+      "text": "
+  
+
+  
+    
+    Hello there friend
+  
+
+  
+    
+    Boing who does it
+  
+
+  
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+  
+
+  
+    
+    wq
+  
+
+
+",
+      "type": "unstyled",
     },
   ],
   "entityMap": Object {},
@@ -15,7 +60,23 @@ exports[`convertFromHtml converts code blocks from github 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "githubCodeBlock.txt",
+      "text": "",
+    },
+    Object {
+      "text": "
+dqdqdqd
+dqdqdqd
+d
+wqd
+qwd
+qwd
+",
+      "type": "code-block",
+    },
+    Object {
+      "text": "
+",
+      "type": "unstyled",
     },
   ],
   "entityMap": Object {},
@@ -26,10 +87,63 @@ exports[`convertFromHtml converts image 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "image.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  ",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "
+  
+
+",
+      "type": "unstyled",
     },
   ],
-  "entityMap": Object {},
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh3.googleusercontent.com/X-QXwAmpysp_xOElAjZtzEBaLcXvwDBfYDnODM-iu3T-J0rNl19CA8n_WqwFJUf8qoonet-W1f6-eMzV8TXFuSVDyiqVubx8aF_w3AF0E_tUBKJXmRx9k4oUSoPAxVlwwMrrQ0_3",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+  },
 }
 `;
 
@@ -37,7 +151,22 @@ exports[`convertFromHtml converts inline code 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "inlineCode.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 14,
+          "offset": 27,
+          "style": "CODE",
+        },
+      ],
+      "text": "
+  
+  This is text with 
+  
+  inline code 
+  yeap
+
+
+",
     },
   ],
   "entityMap": Object {},
@@ -48,7 +177,149 @@ exports[`convertFromHtml converts ordered lists 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "orderedList.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 45,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  : (Nelson) Most features follow this flow:
+
+  
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Idea (see below)
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Plan (see above)
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 13,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Design
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 12,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Build
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 13,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Deploy
+    
+  
+
+
+",
+      "type": "ordered-list-item",
     },
   ],
   "entityMap": Object {},
@@ -59,7 +330,109 @@ exports[`convertFromHtml converts rich text with headers 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "richTextWithHeaders.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 13,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  Background
+
+  ",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 85,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 85,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  First off, thanks a lot for taking the time to do this. We really appreciate
+  it!",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 140,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 140,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  Our ultimate goal is to understand, at a nuts and bolts level how you ship product to
+  customers. What’s working for you and what isn’t.",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 385,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 231,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  We believe that there is no “right way” to ship software and that the best
+  process is very context dependant. For example, how you’d ship software for a
+  medical device is very different from how you ship a web app. Also
+  different
+  team sizes need
+  different process. For that reason some question might not make sense for your
+  situation. If that’s the case just note that.",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+
+",
+      "type": "unstyled",
     },
   ],
   "entityMap": Object {},
@@ -70,10 +443,203 @@ exports[`convertFromHtml converts rich text with headers and links 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "richTextWithHeadersAndLinks.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 12,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  Questions
+
+  ",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 167,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 167,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 167,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  Q: Please include a describing what your company does. We use that to give you a shout
+  out on the interview page. Here’s an example from the Codetree
+  interview:",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 87,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 87,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 87,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  “Codetree is a project management tool for software teams that use GitHub
+  issues.”",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 54,
+          "offset": 159,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 213,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 158,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 54,
+          "offset": 159,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 213,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  You can see another example and where it’s used at the link below. Look for the
+  italised section at the top starting with, “Today's interview is
+  with”: 
+  https://codetree.com/how-we-ship/interviews/adstage",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 84,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 84,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  A: (Nelson) Tettra makes simple wiki software that helps teams share
+  knowledge.",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 372,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 372,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 372,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  Q: Because shipping software is context dependant, can you let us know your team size
+  and any other context you think might be important for readers? E.g. “We have 20
+  people and ship nuclear reactor software which, as has one could imagine is highly
+  regulated and puts a premium on safety and reliability that makers of Web based
+   CRUD apps would fine onerous.”",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+
+",
+      "type": "unstyled",
     },
   ],
-  "entityMap": Object {},
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": null,
+        "title": null,
+        "url": "https://codetree.com/how-we-ship/interviews/adstage",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+  },
 }
 `;
 
@@ -81,10 +647,301 @@ exports[`convertFromHtml converts table 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "table.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+
+  
+    
+
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": " 
+  ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+
+",
+      "type": "unstyled",
     },
   ],
-  "entityMap": Object {},
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "rows": Array [
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "
+        
+          dqdqd
+        ",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "
+        
+          ddwq
+        ",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "
+        
+          Dqdqw dqd qwd
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          Dqw
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          Dqw
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          Dqw
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          D
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          D
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+          
+          Q",
+                  "type": "unstyled",
+                },
+                Object {
+                  "text": "
+
+          ",
+                  "type": "unstyled",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 16,
+                      "offset": 28,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "
+          
+          Dqdqd 
+          qd wq
+        ",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+        ],
+      },
+      "mutability": "IMMUTABLE",
+      "type": "TABLE",
+    },
+  },
 }
 `;
 
@@ -92,10 +949,160 @@ exports[`convertFromHtml converts unorderd list with links from github 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "unorderedListWithLinksFromGithub.txt",
+      "text": "
+  ",
+    },
+    Object {
+      "text": "
+  Examples
+
+  
+  ",
+      "type": "header-one",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 19,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Inline Toolbar
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "1",
+          "length": 17,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Emoji picker
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "2",
+          "length": 19,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Static Toolbar
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "3",
+          "length": 13,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Mentions
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "4",
+          "length": 17,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Atomic Block
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "5",
+          "length": 19,
+          "offset": 0,
+        },
+      ],
+      "text": "
+    Block Switcher
+  
+
+
+",
+      "type": "unordered-list-item",
     },
   ],
-  "entityMap": Object {},
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/inline-toolbar",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "1": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/emoji-example",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "2": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/static-toolbar-example",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "3": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/mentions-example",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "4": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/atomic-block",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "5": Object {
+      "data": Object {
+        "alt": "nofollow",
+        "title": null,
+        "url": "https://codesandbox.io/s/github/draft-js-plugins/next/tree/master/examples/inline-toolbar",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+  },
 }
 `;
 
@@ -103,7 +1110,158 @@ exports[`convertFromHtml converts unordered lists 1`] = `
 Object {
   "blocks": Array [
     Object {
-      "text": "unorderedList.txt",
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  
+    ",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Dqdq
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Dwqd
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Wqd
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Wqd
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Qwd
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 9,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Qd
+    
+  
+
+
+",
+      "type": "unordered-list-item",
     },
   ],
   "entityMap": Object {},
