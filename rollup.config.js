@@ -4,33 +4,41 @@ import external from 'rollup-plugin-peer-deps-external'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 import svgr from '@svgr/rollup'
+import { terser } from "rollup-plugin-terser";
 
 import pkg from './package.json'
 
-export default {
+const outputs = [
+  {
+    file: pkg.main,
+    format: 'cjs',
+    sourcemap: true
+  },
+  {
+    file: pkg.module,
+    format: 'es',
+    sourcemap: true
+  }
+]
+
+const config ={
   input: 'src/index.js',
   external: ['draft-js/lib/getSafeBodyFromHTML'],
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: true
-    }
-  ],
   plugins: [
+    terser(),
     external(),
     url(),
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      plugins: [ '@babel/proposal-class-properties' ]
     }),
     resolve(),
-    commonjs()
+    commonjs(),
   ]
-}
+} 
+
+export default outputs.map(output => ({
+  ...config,
+  output: output
+}))
