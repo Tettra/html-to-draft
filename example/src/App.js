@@ -8,7 +8,6 @@ import 'draft-js/dist/Draft.css'
 import example from './example'
 
 const parseBlock = (element) => {
-  //console.log('element', element.nodeName)
   if (element.nodeName === 'BR') {
     return {
       type: 'unstyled'

@@ -210,7 +210,14 @@ class RawDraftContent {
 
   parseBlock = (element): Block => {
     let blockType = blockTypes[element.nodeName]
+    const lastBlock = this.content.blocks[this.content.blocks.length - 1]
     let block = { }
+
+    // Some editors use DIV instead of P nodes, this will prevent bunching all text into
+    // one unstyled block
+    if (element.nodeName === 'DIV' && lastBlock && lastBlock.text.length > 0) {
+      this.addBlock({ type: 'unstyled' })
+    }
 
     // This is for paper code blocks
     if (element.nodeName === 'CODE' && element.parentElement.textContent.length === element.textContent.length) {

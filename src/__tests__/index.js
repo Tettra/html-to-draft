@@ -9,11 +9,12 @@ import inlineCodeHtml from '../../__mocks__/inlineCode'
 import codeBlockPaperHtml from '../../__mocks__/codeBlockPaper'
 import githubCodeBlockHtml from '../../__mocks__/githubCodeBlock'
 import unorderedListWithLinksFromGithubHtml from '../../__mocks__/unorderedListWithLinksFromGithub'
-
 import nestedBulletsGoogleDocs from '../../__mocks__/nestedBulletsGoogleDocs'
 import nestedOrderedListsGoogleDocs from '../../__mocks__/nestedOrderedListsGoogleDocs'
 import nestedBulletsPaperCom from '../../__mocks__/nestedBulletsPaperCom'
 import nestedOrdererdListsPaper from '../../__mocks__/nestedOrdererdListsPaper'
+import horizontalRulePaper from '../../__mocks__/horizontalRulePaper'
+import horizontalRuleGoogleDocs from '../../__mocks__/horizontalRuleGoogleDocs'
 
 /*
  * Custom table implementation
@@ -35,6 +36,15 @@ const parseRows = (element, rows = []) => {
 }
 
 const parseBlock = (element) => {
+  if (element.nodeName === 'HR') {
+    return {
+      type: 'atomic',
+      entity: {
+        type: 'HR'
+      }
+    }
+  }
+
   if (element.nodeName === 'BR') {
     return {
       type: 'unstyled'
@@ -74,4 +84,6 @@ describe('convertFromHtml', () => {
   test('converts nested ordered list from google docs', () => expect(convertHtml(nestedOrderedListsGoogleDocs)).toMatchSnapshot())
   test('converts nested bullet list from paper', () => expect(convertHtml(nestedBulletsPaperCom)).toMatchSnapshot())
   test('converts nested ordered list from paper', () => expect(convertHtml(nestedOrdererdListsPaper)).toMatchSnapshot())
+  test('converts horizontal rule from paper', () => expect(convertHtml(horizontalRulePaper)).toMatchSnapshot())
+  test('converts horizontal rule from google docs', () => expect(convertHtml(horizontalRuleGoogleDocs)).toMatchSnapshot())
 })

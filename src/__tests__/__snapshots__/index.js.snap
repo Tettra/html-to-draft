@@ -5,36 +5,10 @@ Object {
   "blocks": Array [
     Object {
       "text": "
-  
-    ",
+  ",
     },
     Object {
-      "inlineStyleRanges": Array [
-        Object {
-          "length": 23,
-          "offset": 12,
-          "style": "CODE",
-        },
-        Object {
-          "length": 22,
-          "offset": 47,
-          "style": "CODE",
-        },
-      ],
       "text": "
-  
-
-  
-    
-    Hello there friend
-  
-
-  
-    
-    Boing who does it
-  
-
-  
     ",
       "type": "unstyled",
     },
@@ -42,7 +16,55 @@ Object {
       "text": "
   
 
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 5,
+          "style": "CODE",
+        },
+      ],
+      "text": "
+    
+    Hello there friend
   
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 22,
+          "offset": 5,
+          "style": "CODE",
+        },
+      ],
+      "text": "
+    
+    Boing who does it
+  
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+  
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
     
     wq
   
@@ -80,6 +102,124 @@ qwd
     },
   ],
   "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts horizontal rule from google docs 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  ",
+    },
+    Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": " 
+  ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+
+",
+      "type": "unstyled",
+    },
+  ],
+  "entityMap": Object {
+    "0": Object {
+      "type": "HR",
+    },
+  },
+}
+`;
+
+exports[`convertFromHtml converts horizontal rule from paper 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "
+  ",
+    },
+    Object {
+      "text": "
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+  
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "
+    ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " 
+    
+
+",
+      "type": "atomic",
+    },
+  ],
+  "entityMap": Object {
+    "0": Object {
+      "type": "HR",
+    },
+  },
 }
 `;
 
@@ -1466,16 +1606,20 @@ Object {
   ",
     },
     Object {
+      "text": "
+
+  ",
+      "type": "unstyled",
+    },
+    Object {
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
-          "offset": 9,
+          "offset": 5,
           "style": "BOLD",
         },
       ],
       "text": "
-
-  
     
 
     ",
