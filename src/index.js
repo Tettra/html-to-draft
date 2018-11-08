@@ -16,6 +16,15 @@ const blockTypes = {
   'P': 'unstyled'
 }
 
+const countParents = (el, match, count = 0) => {
+  if (el.parentElement != null) {
+    if (match(el.parentElement)) count++
+    return countParents(el.parentElement, match, count);
+  } else {
+    return count;
+  }
+}
+
 const textDecorations = {
   underline: 'UNDERLINE',
   'line-through': 'STRIKETHROUGH'
@@ -214,6 +223,13 @@ class RawDraftContent {
 
     if (element.nodeName === 'LI' && element.parentNode.nodeName === 'OL') {
       blockType = 'ordered-list-item'
+    }
+
+    if (element.nodeName === 'LI') {
+      const depth = countParents(element, el => ['UL', 'OL'].includes(el.nodeName)) - 1
+      block = {
+        depth: depth > 0 ? depth : 0
+      }
     }
 
     if (element.nodeName === 'IMG') {

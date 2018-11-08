@@ -30,7 +30,7 @@ export default class App extends Component {
         <Editor
           handlePastedText={(text, html) => {
             if (html) {
-              // console.log('html', html)
+              console.log('html', html)
               console.log('converterd', convertFromHtml(html, { parseBlock }))
               this.setState({ editorState: EditorState.push(this.state.editorState, convertFromRaw(convertFromHtml(html, { parseBlock }))) });
             }

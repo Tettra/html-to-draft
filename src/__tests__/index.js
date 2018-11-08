@@ -10,6 +10,11 @@ import codeBlockPaperHtml from '../../__mocks__/codeBlockPaper'
 import githubCodeBlockHtml from '../../__mocks__/githubCodeBlock'
 import unorderedListWithLinksFromGithubHtml from '../../__mocks__/unorderedListWithLinksFromGithub'
 
+import nestedBulletsGoogleDocs from '../../__mocks__/nestedBulletsGoogleDocs'
+import nestedOrderedListsGoogleDocs from '../../__mocks__/nestedOrderedListsGoogleDocs'
+import nestedBulletsPaperCom from '../../__mocks__/nestedBulletsPaperCom'
+import nestedOrdererdListsPaper from '../../__mocks__/nestedOrdererdListsPaper'
+
 /*
  * Custom table implementation
  */
@@ -64,5 +69,9 @@ describe('convertFromHtml', () => {
   test('converts inline code', () => expect(convertHtml(inlineCodeHtml)).toMatchSnapshot())
   test('converts code blocks from github', () => expect(convertHtml(githubCodeBlockHtml)).toMatchSnapshot())
   test('converts code blocks from dropbox paper', () => expect(convertHtml(codeBlockPaperHtml)).toMatchSnapshot())
-  test('converts unorderd list with links from github', () => expect(convertHtml(unorderedListWithLinksFromGithubHtml)).toMatchSnapshot())
+  test('converts unordered list with links from github', () => expect(convertHtml(unorderedListWithLinksFromGithubHtml)).toMatchSnapshot())
+  test('converts nested bullet list from google docs', () => expect(convertHtml(nestedBulletsGoogleDocs)).toMatchSnapshot())
+  test('converts nested ordered list from google docs', () => expect(convertHtml(nestedOrderedListsGoogleDocs)).toMatchSnapshot())
+  test('converts nested bullet list from paper', () => expect(convertHtml(nestedBulletsPaperCom)).toMatchSnapshot())
+  test('converts nested ordered list from paper', () => expect(convertHtml(nestedOrdererdListsPaper)).toMatchSnapshot())
 })

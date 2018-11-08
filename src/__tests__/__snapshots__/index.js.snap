@@ -173,6 +173,809 @@ Object {
 }
 `;
 
+exports[`convertFromHtml converts nested bullet list from google docs 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  
+    ",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      One
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Two
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 12,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Three
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Nested One
+        
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Nested Two
+        
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+          
+            ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 27,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+            
+
+              
+              
+              Nested Three
+            
+          
+        
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 22,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Nested Four
+        
+      
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Four
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Six
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 22,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Nested Five
+        
+      
+    
+  
+
+",
+      "type": "unordered-list-item",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts nested bullet list from paper 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "
+  
+    ",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    One
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    Two
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    Three
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Nested One
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Nested Two
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+          
+            ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "text": "
+            Nested Three
+          
+        
+
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Nested Four
+      
+    
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    Four
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    Six
+
+    ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+        ",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Nested Five
+      
+    
+  
+
+",
+      "type": "unordered-list-item",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts nested ordered list from google docs 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+
+  
+    ",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      One
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      Two
+
+      
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Nested One
+
+          
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 25,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+            
+
+              
+              
+              Nested Two
+            
+
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 27,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+            
+
+              
+              
+              Nested Three
+
+              
+                ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 3,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 17,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 24,
+          "offset": 37,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+                
+
+                  
+                  Boing
+                
+              
+            
+
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+            
+
+              
+              
+              Blooom
+            
+          
+        
+
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 14,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Lol
+        
+      
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 39,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+    
+
+      
+      I’m running out of things to say
+
+      
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 49,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+        
+
+          
+          
+          Maybe I should just make stupid rhymes
+        
+      
+    
+  
+
+",
+      "type": "ordered-list-item",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts nested ordered list from paper 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "text": "
+  
+    ",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+    One
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+      Two
+
+      
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+          
+          Nested One
+
+          
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "text": "
+            Nested Two
+
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "text": "
+              
+              Nested Three
+
+              
+                ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 3,
+      "text": "
+                Boing
+              
+            
+
+            ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "text": "
+            Blooom
+          
+        
+
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Lol
+      
+    
+
+    ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "text": "
+      
+      I’m running out of things to say
+
+      
+        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "text": "
+        Maybe I should just make stupid rhymes
+      
+    
+  
+
+",
+      "type": "ordered-list-item",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
 exports[`convertFromHtml converts ordered lists 1`] = `
 Object {
   "blocks": Array [
@@ -205,6 +1008,7 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -228,6 +1032,7 @@ Object {
       "type": "ordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -251,6 +1056,7 @@ Object {
       "type": "ordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -274,6 +1080,7 @@ Object {
       "type": "ordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -297,6 +1104,7 @@ Object {
       "type": "ordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -945,7 +1753,7 @@ Object {
 }
 `;
 
-exports[`convertFromHtml converts unorderd list with links from github 1`] = `
+exports[`convertFromHtml converts unordered list with links from github 1`] = `
 Object {
   "blocks": Array [
     Object {
@@ -961,6 +1769,7 @@ Object {
       "type": "header-one",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "0",
@@ -975,6 +1784,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "1",
@@ -989,6 +1799,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "2",
@@ -1003,6 +1814,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "3",
@@ -1017,6 +1829,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "4",
@@ -1031,6 +1844,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "entityRanges": Array [
         Object {
           "key": "5",
@@ -1124,6 +1938,7 @@ Object {
     ",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -1147,6 +1962,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -1170,6 +1986,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -1193,6 +2010,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -1216,6 +2034,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
@@ -1239,6 +2058,7 @@ Object {
       "type": "unordered-list-item",
     },
     Object {
+      "depth": 0,
       "inlineStyleRanges": Array [
         Object {
           "length": 0,
