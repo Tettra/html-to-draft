@@ -12,9 +12,11 @@ const blockTypes = {
   'LI': 'unordered-list-item',
   'BLOCKQUOTE': 'blockquote',
   'PRE': 'code-block',
-  'IMG': 'atomic',
   'P': 'unstyled'
 }
+
+const isTwitterEmoji = element => element.nodeName === 'IMG' && element.className === 'Emoji Emoji--forText'
+const isPaperEmoji = element => element.nodeName === 'IMG' && element.dataset && element.dataset.hasOwnProperty('emojiCh')
 
 const countParents = (el, match, count = 0) => {
   if (el.parentElement != null) {
@@ -255,8 +257,13 @@ class RawDraftContent {
       }
     }
 
-    if (element.nodeName === 'IMG') {
+    if (isTwitterEmoji(element)) {
+      this.addText(element.getAttribute('alt'))
+    } else if (isPaperEmoji(element)) {
+      this.addText(element.dataset.emojiCh)
+    } else if (element.nodeName === 'IMG') {
       block = {
+        type: 'atomic',
         entity: {
           type: 'IMAGE',
           mutability: 'IMMUTABLE',

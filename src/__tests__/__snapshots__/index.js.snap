@@ -1,5 +1,1525 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`convertFromHtml converts big doc from paper, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 8,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Header 1",
+      "type": "header-one",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 2",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 8,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Header 1",
+      "type": "header-one",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 3",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 2",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 5",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "sdfsdf",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 4,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Bold",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 11,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Bold italic",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold italic underline *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 37,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 37,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 37,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold italic underline strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Bold italic strikethrough*",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold underline *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold underline strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Bold strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 6,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Italic",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Italic underline",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Italic underline strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Italic strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Underline",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Underline strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 13,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Line above horizontal line",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "1",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Line below horizontal line",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "2",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "3",
+          "length": 6,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 6,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "A link",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "4",
+          "length": 12,
+          "offset": 0,
+        },
+        Object {
+          "key": "5",
+          "length": 5,
+          "offset": 12,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 5,
+          "offset": 12,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "http://google.com ",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Colored text",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "New font",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 1",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 2",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 3",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 2",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 3",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 1",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Number 1",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Number 2        ",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Number 3",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Number 3",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Number 2",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Number 1",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "6",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "7",
+          "length": 44,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 44,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "A super long link that i’m going to break up",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Lkjsdflkjdsfsdf",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "sdfsdfsdf",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Sdflkjlkjsdfsdf",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "8",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks ",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "9",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "10",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+  ],
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh6.googleusercontent.com/UK8Up_WyGZzLCfTrXsoA2iidlUE7i4_Sbecuy9pfmz-Yj39Z9deRipjpC2qr2uHdxCpaQrGAyp1HXmC3uOIcceEWIULfoGirA21HdYWFsxvtdRLlo8RNS4-YY_ljI8dpUmHbSxrJ",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "1": Object {
+      "type": "HR",
+    },
+    "10": Object {
+      "data": Object {
+        "rows": Array [
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 11,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Acquisition",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Tettra.co visitors",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+4%) 12,507",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New teams signed up",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-18%) 602",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 9,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Customers",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Existing",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "445",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "23",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Churned",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-19",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Total",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(0.9%) 449",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 3,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "MRR",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Existing",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$39,357",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$1,607",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Upgrades",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$1,053",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Downgrades",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-$212",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Churned",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-$1,621",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "MRR Churn",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "1.98%",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Total",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+2.1%) $40,184",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 13,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Product Usage",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "People who created or updated a page",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+4.8%) 2,741",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "People who viewed a page",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+13.7%) 9,323",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 8,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Finances",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Start of month balance",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$525,242",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Expenses",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-28.8%) -$60,602",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Cash flow",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$36,440",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Burn",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-55.4%) -$20,417",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Additional investment",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$25,000",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "End of month balance",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$518,493",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Months of runway",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "25.4",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+        ],
+      },
+      "mutability": "IMMUTABLE",
+      "type": "TABLE",
+    },
+    "2": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh5.googleusercontent.com/H20ZrztzYgQOUmfLuB-nCW0NChNsvES-r2fd5xnLFND5K0GyJcMESgjwXLnpJ3udqZJxN5yX4w2WN-SEguwjpRtG5EZc7RaWIBNI-D8N1Az_UOFMCTeCcmMpqVQ-eXCFlabkGSqi",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "3": Object {
+      "data": Object {
+        "alt": "noreferrer nofollow noopener",
+        "title": null,
+        "url": "http://google.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "4": Object {
+      "data": Object {
+        "alt": "noreferrer nofollow noopener",
+        "title": null,
+        "url": "http://google.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "5": Object {
+      "data": Object {
+        "alt": "noreferrer nofollow noopener",
+        "title": null,
+        "url": "http://google.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "6": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh6.googleusercontent.com/UK8Up_WyGZzLCfTrXsoA2iidlUE7i4_Sbecuy9pfmz-Yj39Z9deRipjpC2qr2uHdxCpaQrGAyp1HXmC3uOIcceEWIULfoGirA21HdYWFsxvtdRLlo8RNS4-YY_ljI8dpUmHbSxrJ",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "7": Object {
+      "data": Object {
+        "alt": "noreferrer nofollow noopener",
+        "title": null,
+        "url": "http://yahoo.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "8": Object {
+      "data": Object {
+        "alt": "rocket",
+        "src": "https://paper.dropboxstatic.com/static/img/ace/emoji/1f680.png?version=3.1.2",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "9": Object {
+      "data": Object {
+        "alt": "top hat",
+        "src": "https://paper.dropboxstatic.com/static/img/ace/emoji/1f3a9.png?version=3.1.2",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+  },
+}
+`;
+
 exports[`convertFromHtml converts code blocks from dropbox paper 1`] = `
 Object {
   "blocks": Array [
@@ -102,6 +1622,78 @@ qwd
       "text": "
 ",
       "type": "unstyled",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts emojis from google docs 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 11,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
+      "text": "
+  
+  😆😇😈😉
+
+",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts emojis from paper 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [],
+      "text": "  ",
+      "type": "atomic",
+    },
+  ],
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": "smiling face with open mouth & closed eyes",
+        "src": "https://paper.dropboxstatic.com/static/img/ace/emoji/1f606.png?version=3.1.2",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+  },
+}
+`;
+
+exports[`convertFromHtml converts emojis from twitter 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "We're having a small happy hour tomorrow evening at Tettra HQ in Union Sq, Somerville. Any folks in the Boston area should swing by and have a pumpkin beer with us. 😁🍂 ",
     },
   ],
   "entityMap": Object {},

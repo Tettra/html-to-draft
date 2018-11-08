@@ -25,7 +25,6 @@ const config = {
   input: 'src/index.js',
   external: ['draft-js/lib/getSafeBodyFromHTML'],
   plugins: [
-    terser(),
     external(),
     url(),
     svgr(),

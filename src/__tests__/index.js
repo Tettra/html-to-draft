@@ -15,6 +15,11 @@ import nestedBulletsPaperCom from '../../__mocks__/nestedBulletsPaperCom'
 import nestedOrdererdListsPaper from '../../__mocks__/nestedOrdererdListsPaper'
 import horizontalRulePaper from '../../__mocks__/horizontalRulePaper'
 import horizontalRuleGoogleDocs from '../../__mocks__/horizontalRuleGoogleDocs'
+import googleDocsEmoji from '../../__mocks__/googleDocsEmojis'
+import paperEmoji from '../../__mocks__/paperEmoji'
+import tweetWithEmoji from '../../__mocks__/tweetWithEmoji'
+import githubEmoji from '../../__mocks__/githubEmojis'
+import bigPaperDoc from '../../__mocks__/bigPaperDocExample'
 
 /*
  * Custom table implementation
@@ -86,4 +91,9 @@ describe('convertFromHtml', () => {
   test('converts nested ordered list from paper', () => expect(convertHtml(nestedOrdererdListsPaper)).toMatchSnapshot())
   test('converts horizontal rule from paper', () => expect(convertHtml(horizontalRulePaper)).toMatchSnapshot())
   test('converts horizontal rule from google docs', () => expect(convertHtml(horizontalRuleGoogleDocs)).toMatchSnapshot())
+  test('converts emojis from google docs', () => expect(convertHtml(googleDocsEmoji)).toMatchSnapshot())
+  test('converts emojis from paper', () => expect(convertHtml(paperEmoji)).toMatchSnapshot())
+  test('converts emojis from twitter', () => expect(convertHtml(tweetWithEmoji)).toMatchSnapshot())
+  test('converts emojis from github', () => expect(convertHtml(githubEmoji)).toMatchSnapshot())
+  test('converts big doc from paper, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists', () => expect(convertHtml(bigPaperDoc)).toMatchSnapshot())
 })
