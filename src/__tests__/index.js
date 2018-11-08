@@ -19,7 +19,8 @@ import googleDocsEmoji from '../../__mocks__/googleDocsEmojis'
 import paperEmoji from '../../__mocks__/paperEmoji'
 import tweetWithEmoji from '../../__mocks__/tweetWithEmoji'
 import githubEmoji from '../../__mocks__/githubEmojis'
-import bigPaperDoc from '../../__mocks__/bigPaperDocExample'
+import bigPaperDoc from '../../__mocks__/bigPaperDoc'
+import bigGoogleDoc from '../../__mocks__/bigGoogleDoc'
 
 /*
  * Custom table implementation
@@ -95,5 +96,6 @@ describe('convertFromHtml', () => {
   test('converts emojis from paper', () => expect(convertHtml(paperEmoji)).toMatchSnapshot())
   test('converts emojis from twitter', () => expect(convertHtml(tweetWithEmoji)).toMatchSnapshot())
   test('converts emojis from github', () => expect(convertHtml(githubEmoji)).toMatchSnapshot())
-  test('converts big doc from paper, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists', () => expect(convertHtml(bigPaperDoc)).toMatchSnapshot())
+  test('converts big paper doc, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists', () => expect(convertHtml(bigPaperDoc)).toMatchSnapshot())
+  test('converts big google doc, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists', () => expect(convertHtml(bigGoogleDoc)).toMatchSnapshot())
 })

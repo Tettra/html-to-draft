@@ -1,6 +1,1685 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`convertFromHtml converts big doc from paper, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists 1`] = `
+exports[`convertFromHtml converts big google doc, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 1269,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "0",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 8,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Header 1",
+      "type": "header-one",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 2",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 8,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Header 1",
+      "type": "header-one",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "header-four",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 3",
+      "type": "header-three",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Heading 2",
+      "type": "header-two",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "header-four",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 5",
+      "type": "header-five",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Heading 4",
+      "type": "header-four",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "sdfsdf",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 1,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 4,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Bold",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 11,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Bold italic",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 23,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold italic underline *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 37,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 37,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Bold italic underline strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 26,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Bold italic strikethrough*",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Bold underline *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
+      "text": "Bold underline strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Bold strikethrough *",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 6,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Italic",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 16,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Italic underline",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 30,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+      ],
+      "text": "Italic underline strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 20,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Italic strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 9,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "Underline",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Underline strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 13,
+          "offset": 0,
+          "style": "STRIKETHROUGH",
+        },
+      ],
+      "text": "Strikethrough",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Line above horizontal line",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "1",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Line below horizontal line",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "2",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "3",
+          "length": 6,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 6,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "A link",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "4",
+          "length": 5,
+          "offset": 12,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 5,
+          "offset": 12,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "http://google.com ",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Colored text",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "New font",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 1",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 2",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 3",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 2",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 3",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Bullet 1",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Number 1",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Number 2	",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Number 3",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 2,
+      "inlineStyleRanges": Array [],
+      "text": "Number 3",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 1,
+      "inlineStyleRanges": Array [],
+      "text": "Number 2",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Number 1",
+      "type": "ordered-list-item",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "5",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "6",
+          "length": 44,
+          "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 44,
+          "offset": 0,
+          "style": "UNDERLINE",
+        },
+      ],
+      "text": "A super long link that i’m going to break up",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Lkjsdflkjdsfsdf",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "sdfsdfsdf",
+      "type": "unstyled",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "depth": 0,
+      "inlineStyleRanges": Array [],
+      "text": "Sdflkjlkjsdfsdf",
+      "type": "unordered-list-item",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks 🚀",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks 🎩",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Google Docs Line Breaks",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "entityRanges": Array [
+        Object {
+          "key": "7",
+          "length": 1,
+          "offset": 0,
+        },
+      ],
+      "text": " ",
+      "type": "atomic",
+    },
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "",
+      "type": "unstyled",
+    },
+    Object {
+      "text": "",
+      "type": "unstyled",
+    },
+  ],
+  "entityMap": Object {
+    "0": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh3.googleusercontent.com/w3Rp5O3toSF289r4hudfH4AtHo2-HXxxP93NbZ2GfOwxc2MnRT2QyGz4KTePH7ps807u7Y0GX4JB_nztNFbLaQYOANhXbexQHDO08t-Qm-w_xhe6z8WdzKWzZbyNETbdLx_upCa8",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "1": Object {
+      "type": "HR",
+    },
+    "2": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh4.googleusercontent.com/4Js3U71U_iHu3qYjdotX2wnjlouf-tcj4DqhuiWR7cuPdMSympqvVhWlrkzcSTjpNUPmgpczER7vju6aNhE7xj17fEVft46bZuPg_wERBvqDNDV5BBvaD_OoXZA7qH8AMYi2FH4P",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "3": Object {
+      "data": Object {
+        "alt": null,
+        "title": null,
+        "url": "http://google.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "4": Object {
+      "data": Object {
+        "alt": null,
+        "title": null,
+        "url": "http://google.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "5": Object {
+      "data": Object {
+        "alt": null,
+        "src": "https://lh3.googleusercontent.com/w3Rp5O3toSF289r4hudfH4AtHo2-HXxxP93NbZ2GfOwxc2MnRT2QyGz4KTePH7ps807u7Y0GX4JB_nztNFbLaQYOANhXbexQHDO08t-Qm-w_xhe6z8WdzKWzZbyNETbdLx_upCa8",
+      },
+      "mutability": "IMMUTABLE",
+      "type": "IMAGE",
+    },
+    "6": Object {
+      "data": Object {
+        "alt": null,
+        "title": null,
+        "url": "http://yahoo.com",
+      },
+      "mutability": "MUTABLE",
+      "type": "LINK",
+    },
+    "7": Object {
+      "data": Object {
+        "rows": Array [
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 11,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Acquisition",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Tettra.co visitors",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+4%) 12,507",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New teams signed up",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-18%) 602",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 9,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Customers",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Existing",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "445",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "23",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Churned",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-19",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Total",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(0.9%) 449",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 3,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "MRR",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Existing",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$39,357",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "New",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$1,607",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Upgrades",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$1,053",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Downgrades",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-$212",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Churned",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "-$1,621",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "MRR Churn",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "1.98%",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Total",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+2.1%) $40,184",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 13,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Product Usage",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "People who created or updated a page",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+4.8%) 2,741",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "People who viewed a page",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(+13.7%) 9,323",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 8,
+                      "offset": 0,
+                      "style": "BOLD",
+                    },
+                  ],
+                  "text": "Finances",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "text": "",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Start of month balance",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$525,242",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Expenses",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-28.8%) -$60,602",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Cash flow",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$36,440",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Burn",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "(-55.4%) -$20,417",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Additional investment",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$25,000",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "End of month balance",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "$518,493",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+          Array [
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "Months of runway",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+            Object {
+              "blocks": Array [
+                Object {
+                  "text": "",
+                },
+                Object {
+                  "inlineStyleRanges": Array [],
+                  "text": "25.4",
+                  "type": "unstyled",
+                },
+              ],
+              "entityMap": Object {},
+            },
+          ],
+        ],
+      },
+      "mutability": "IMMUTABLE",
+      "type": "TABLE",
+    },
+  },
+}
+`;
+
+exports[`convertFromHtml converts big paper doc, incl images, tables, emojis, links, horizontal lines, headers, nested ordered and unordered lists 1`] = `
 Object {
   "blocks": Array [
     Object {
@@ -1622,6 +3301,18 @@ qwd
       "text": "
 ",
       "type": "unstyled",
+    },
+  ],
+  "entityMap": Object {},
+}
+`;
+
+exports[`convertFromHtml converts emojis from github 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "inlineStyleRanges": Array [],
+      "text": "Just tested for the first time and I have to say... THIS IS AMAZING!!! 🔥✨🤯",
     },
   ],
   "entityMap": Object {},
