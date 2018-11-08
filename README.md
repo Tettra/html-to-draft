@@ -33,7 +33,7 @@ convertFromHtml(
 type TextFragment = {
   offset: number,
   length: number,
-  inlineStyle: ?string,
+  inlineStyleRanges: ?Array<string>,
   entity: ?{
     type: string,
     data: ?Object,
