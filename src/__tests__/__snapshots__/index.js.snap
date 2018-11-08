@@ -8,6 +8,7 @@ Object {
   ",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
     ",
       "type": "unstyled",
@@ -20,6 +21,13 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 23,
+          "offset": 5,
+          "style": "CODE",
+        },
+      ],
       "text": "
     
     Hello there friend
@@ -29,6 +37,13 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 22,
+          "offset": 5,
+          "style": "CODE",
+        },
+      ],
       "text": "
     
     Boing who does it
@@ -38,6 +53,7 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
     ",
       "type": "unstyled",
@@ -50,6 +66,7 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
     
     wq
@@ -95,6 +112,13 @@ exports[`convertFromHtml converts horizontal rule from google docs 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   ",
     },
@@ -105,6 +129,13 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   ",
       "type": "unstyled",
@@ -115,6 +146,13 @@ Object {
           "key": "0",
           "length": 1,
           "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 3,
+          "style": "BOLD",
         },
       ],
       "text": " 
@@ -149,6 +187,7 @@ Object {
   ",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
     ",
       "type": "unstyled",
@@ -161,6 +200,7 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
     ",
       "type": "unstyled",
@@ -192,6 +232,13 @@ exports[`convertFromHtml converts image 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   ",
     },
@@ -202,6 +249,13 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   ",
       "type": "unstyled",
@@ -242,6 +296,13 @@ exports[`convertFromHtml converts inline code 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 14,
+          "offset": 27,
+          "style": "CODE",
+        },
+      ],
       "text": "
   
   This is text with 
@@ -261,6 +322,13 @@ exports[`convertFromHtml converts nested bullet list from google docs 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
@@ -269,6 +337,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -281,6 +361,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -293,6 +385,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 12,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -305,6 +409,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
         ",
@@ -312,6 +417,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -325,6 +442,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -338,6 +467,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
           
             ",
@@ -345,6 +475,18 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 27,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
       "text": "
             
 
@@ -360,6 +502,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 22,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -375,6 +529,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -387,6 +553,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -399,6 +577,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
         ",
@@ -406,6 +585,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 22,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -429,12 +620,14 @@ exports[`convertFromHtml converts nested bullet list from paper 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
   
     ",
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     One
 
@@ -443,6 +636,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     Two
 
@@ -451,6 +645,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     Three
 
@@ -459,6 +654,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
         ",
@@ -466,6 +662,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Nested One
 
@@ -474,6 +671,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Nested Two
 
@@ -482,6 +680,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
           
             ",
@@ -489,6 +688,7 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [],
       "text": "
             Nested Three
           
@@ -499,6 +699,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Nested Four
       
@@ -509,6 +710,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     Four
 
@@ -517,6 +719,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     Six
 
@@ -525,6 +728,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
         ",
@@ -532,6 +736,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Nested Five
       
@@ -550,6 +755,13 @@ exports[`convertFromHtml converts nested ordered list from google docs 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
@@ -558,6 +770,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -570,6 +794,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -582,6 +818,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -595,6 +843,18 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 25,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
       "text": "
             
 
@@ -608,6 +868,18 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 27,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
       "text": "
             
 
@@ -621,6 +893,18 @@ Object {
     },
     Object {
       "depth": 3,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 17,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 24,
+          "offset": 37,
+          "style": "BOLD",
+        },
+      ],
       "text": "
                 
 
@@ -635,6 +919,18 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 13,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 21,
+          "offset": 44,
+          "style": "BOLD",
+        },
+      ],
       "text": "
             
 
@@ -650,6 +946,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 14,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -665,6 +973,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 39,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -677,6 +997,18 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 9,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 49,
+          "offset": 32,
+          "style": "BOLD",
+        },
+      ],
       "text": "
         
 
@@ -700,12 +1032,14 @@ exports[`convertFromHtml converts nested ordered list from paper 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
   
     ",
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
     One
 
@@ -714,6 +1048,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
       Two
@@ -724,6 +1059,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
           
           Nested One
@@ -734,6 +1070,7 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [],
       "text": "
             Nested Two
 
@@ -742,6 +1079,7 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [],
       "text": "
               
               Nested Three
@@ -752,6 +1090,7 @@ Object {
     },
     Object {
       "depth": 3,
+      "inlineStyleRanges": Array [],
       "text": "
                 Boing
               
@@ -762,6 +1101,7 @@ Object {
     },
     Object {
       "depth": 2,
+      "inlineStyleRanges": Array [],
       "text": "
             Blooom
           
@@ -772,6 +1112,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Lol
       
@@ -782,6 +1123,7 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [],
       "text": "
       
       I’m running out of things to say
@@ -792,6 +1134,7 @@ Object {
     },
     Object {
       "depth": 1,
+      "inlineStyleRanges": Array [],
       "text": "
         Maybe I should just make stupid rhymes
       
@@ -810,12 +1153,26 @@ exports[`convertFromHtml converts ordered lists 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
   ",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 45,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   : (Nelson) Most features follow this flow:
 
@@ -825,6 +1182,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -837,6 +1206,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -849,6 +1230,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 13,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -861,6 +1254,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 12,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -873,6 +1278,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 13,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -894,12 +1311,26 @@ exports[`convertFromHtml converts rich text with headers 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
   ",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 13,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   Background
 
@@ -907,6 +1338,18 @@ Object {
       "type": "header-two",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 85,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 85,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   First off, thanks a lot for taking the time to do this. We really appreciate
   it!",
@@ -919,6 +1362,18 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 140,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 140,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   Our ultimate goal is to understand, at a nuts and bolts level how you ship product to
   customers. What’s working for you and what isn’t.",
@@ -931,6 +1386,18 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 385,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 23,
+          "offset": 231,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   We believe that there is no “right way” to ship software and that the best
   process is very context dependant. For example, how you’d ship software for a
@@ -957,12 +1424,26 @@ exports[`convertFromHtml converts rich text with headers and links 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
   ",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 12,
+          "offset": 0,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   Questions
 
@@ -970,6 +1451,23 @@ Object {
       "type": "header-two",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 167,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 167,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 167,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   Q: Please include a describing what your company does. We use that to give you a shout
   out on the interview page. Here’s an example from the Codetree
@@ -983,6 +1481,28 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 87,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 87,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 87,
+          "offset": 0,
+          "style": "ITALIC",
+        },
+        Object {
+          "length": 0,
+          "offset": 87,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   “Codetree is a project management tool for software teams that use GitHub
   issues.”",
@@ -1002,6 +1522,33 @@ Object {
           "offset": 159,
         },
       ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 213,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 158,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 54,
+          "offset": 159,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 54,
+          "offset": 159,
+          "style": "UNDERLINE",
+        },
+        Object {
+          "length": 0,
+          "offset": 213,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   You can see another example and where it’s used at the link below. Look for the
   italised section at the top starting with, “Today's interview is
@@ -1016,6 +1563,18 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 84,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 84,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   A: (Nelson) Tettra makes simple wiki software that helps teams share
   knowledge.",
@@ -1028,6 +1587,23 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 372,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 372,
+          "offset": 0,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 0,
+          "offset": 372,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   Q: Because shipping software is context dependant, can you let us know your team size
   and any other context you think might be important for readers? E.g. “We have 20
@@ -1062,6 +1638,13 @@ exports[`convertFromHtml converts table 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   ",
     },
@@ -1072,6 +1655,13 @@ Object {
       "type": "unstyled",
     },
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1084,6 +1674,13 @@ Object {
           "key": "0",
           "length": 1,
           "offset": 0,
+        },
+      ],
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 3,
+          "offset": 3,
+          "style": "BOLD",
         },
       ],
       "text": " 
@@ -1114,6 +1711,7 @@ Object {
                   "text": "",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
         
           dqdqd
@@ -1129,6 +1727,7 @@ Object {
                   "text": "",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
         
           ddwq
@@ -1182,6 +1781,7 @@ Object {
                   "text": "",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
         
           Dqdqw dqd qwd
@@ -1190,6 +1790,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           Dqw
@@ -1198,6 +1799,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           Dqw
@@ -1206,6 +1808,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           Dqw
@@ -1214,6 +1817,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           D
@@ -1222,6 +1826,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           D
@@ -1230,6 +1835,7 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [],
                   "text": "
           
           Q",
@@ -1242,6 +1848,13 @@ Object {
                   "type": "unstyled",
                 },
                 Object {
+                  "inlineStyleRanges": Array [
+                    Object {
+                      "length": 16,
+                      "offset": 28,
+                      "style": "BOLD",
+                    },
+                  ],
                   "text": "
           
           Dqdqd 
@@ -1344,6 +1957,7 @@ Object {
   ",
     },
     Object {
+      "inlineStyleRanges": Array [],
       "text": "
   Examples
 
@@ -1360,6 +1974,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Inline Toolbar
 
@@ -1375,6 +1990,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Emoji picker
 
@@ -1390,6 +2006,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Static Toolbar
 
@@ -1405,6 +2022,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Mentions
 
@@ -1420,6 +2038,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Atomic Block
 
@@ -1435,6 +2054,7 @@ Object {
           "offset": 0,
         },
       ],
+      "inlineStyleRanges": Array [],
       "text": "
     Block Switcher
   
@@ -1507,6 +2127,13 @@ exports[`convertFromHtml converts unordered lists 1`] = `
 Object {
   "blocks": Array [
     Object {
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 3,
+          "style": "BOLD",
+        },
+      ],
       "text": "
   
 
@@ -1515,6 +2142,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1527,6 +2166,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 11,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1539,6 +2190,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1551,6 +2214,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1563,6 +2238,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 10,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 
@@ -1575,6 +2262,18 @@ Object {
     },
     Object {
       "depth": 0,
+      "inlineStyleRanges": Array [
+        Object {
+          "length": 0,
+          "offset": 5,
+          "style": "BOLD",
+        },
+        Object {
+          "length": 9,
+          "offset": 13,
+          "style": "BOLD",
+        },
+      ],
       "text": "
     
 

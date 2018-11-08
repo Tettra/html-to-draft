@@ -157,58 +157,66 @@ class RawDraftContent {
   }
 
   parseTextFragment = (element, offset = 0): TextFragment => {
-    let textFragment = null
+    let textFragment = { }
+
+    const inlineStyle = inlineStyleTags[element.nodeName.toLowerCase()]
+    const fontWeight = element.style && element.style.fontWeight
+    const textDecoration = element.style && element.style.textDecoration
+    const fontStyle = element.style && element.style.fontStyle
+    const fontFamily = element.style && element.style.fontFamily
+
+    const inlineStyleRanges = []
+
+    if (inlineStyle != null) {
+      inlineStyleRanges.push(inlineStyle)
+    }
+
+    if (boldValues.includes(fontWeight)) {
+      inlineStyleRanges.push('BOLD')
+    }
+
+    if (fontStyle === 'italic') {
+      inlineStyleRanges.push('ITALIC')
+    }
+
+    if (textDecorations[textDecoration] != null) {
+      inlineStyleRanges.push(textDecorations[textDecoration])
+    }
+
+    if (fontFamily === 'monospace') {
+      inlineStyleRanges.push('CODE')
+    }
+
+    textFragment = {
+      ...textFragment,
+      inlineStyleRanges,
+    }
+
+    if (element.nodeName === 'A' && element.attributes.href != null) {
+      textFragment = {
+        ...textFragment,
+        entity: {
+          type: 'LINK',
+          mutability: 'MUTABLE',
+          data: {
+            url: element.getAttribute('href'),
+            alt: element.getAttribute('rel'),
+            title: element.getAttribute('title')
+          }
+        }
+      }
+    }
 
     if (this.customParseTextFragment != null) {
       const parsedTextFragment = this.customParseTextFragment(element)
       if (parsedTextFragment != null) {
-        textFragment = parsedTextFragment
-      }
-    }
-
-    if (textFragment == null) {
-      const inlineStyle = inlineStyleTags[element.nodeName.toLowerCase()]
-      const fontWeight = element.style && element.style.fontWeight
-      const textDecoration = element.style && element.style.textDecoration
-      const fontStyle = element.style && element.style.fontStyle
-      const fontFamily = element.style && element.style.fontFamily
-
-      const inlineStyleRanges = []
-
-      textFragment = {}
-
-      if (inlineStyle != null) {
-        inlineStyleRanges.push(inlineStyle)
-      }
-
-      if (boldValues.includes(fontWeight)) {
-        inlineStyleRanges.push('BOLD')
-      }
-
-      if (fontStyle === 'italic') {
-        inlineStyleRanges.push('ITALIC')
-      }
-
-      if (textDecorations[textDecoration] != null) {
-        inlineStyleRanges.push(textDecorations[textDecoration])
-      }
-
-      if (fontFamily === 'monospace') {
-        inlineStyleRanges.push('CODE')
-      }
-
-      if (element.nodeName === 'A' && element.attributes.href != null) {
         textFragment = {
           ...textFragment,
-          entity: {
-            type: 'LINK',
-            mutability: 'MUTABLE',
-            data: {
-              url: element.getAttribute('href'),
-              alt: element.getAttribute('rel'),
-              title: element.getAttribute('title')
-            }
-          }
+          parsedTextFragment,
+          inlineStyleRanges: [
+            ...textFragment.inlineStyleRnages,
+            ...parsedTextFragment.inlineStyleRanges
+          ]
         }
       }
     }
@@ -306,12 +314,12 @@ class RawDraftContent {
       } else if (element.nodeName === '#text' && element.textContent != null) {
         this.addText(element.textContent)
       } else if (parsedTextFragment) {
-        if (parsedTextFragment.inlineStyle != null) {
-          this.addInlineStyleRanges({
-            style: parsedTextFragment.inlineStyle,
+        if (parsedTextFragment.inlineStyleRanges != null) {
+          this.addInlineStyleRanges(parsedTextFragment.inlineStyleRanges.map(style => ({
+            style,
             offset: this.offset,
             length: element.textContent.length
-          })
+          })))
         }
 
         if (parsedTextFragment.entity != null) {
