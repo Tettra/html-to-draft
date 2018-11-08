@@ -70,7 +70,7 @@ type RawDraftContentState = {
 type TextFragment = {
   offset: number,
   length: number,
-  inlineStyle: ?string,
+  inlineStyleRanges: ?Array<string>,
   entity: ?{
     type: string,
     data: ?Object,
@@ -173,20 +173,28 @@ class RawDraftContent {
       const fontStyle = element.style && element.style.fontStyle
       const fontFamily = element.style && element.style.fontFamily
 
+      const inlineStyleRanges = []
+
       textFragment = {}
 
       if (inlineStyle != null) {
-        textFragment = { inlineStyle }
+        inlineStyleRanges.push(inlineStyle)
       }
 
-      if (inlineStyle == null && boldValues.includes(fontWeight)) {
-        textFragment = { inlineStyle: 'BOLD' }
-      } else if (inlineStyle == null && fontStyle === 'italic') {
-        textFragment = { inlineStyle: 'ITALIC' }
-      } else if (inlineStyle == null && textDecorations[textDecoration] != null) {
-        textFragment = { inlineStyle: textDecorations[textDecoration] }
-      } else if (inlineStyle == null && fontFamily === 'monospace') {
-        textFragment = { inlineStyle: 'CODE' }
+      if (boldValues.includes(fontWeight)) {
+        inlineStyleRanges.push('BOLD')
+      }
+
+      if (fontStyle === 'italic') {
+        inlineStyleRanges.push('ITALIC')
+      }
+
+      if (textDecorations[textDecoration] != null) {
+        inlineStyleRanges.push(textDecorations[textDecoration])
+      }
+
+      if (fontFamily === 'monospace') {
+        inlineStyleRanges.push('CODE')
       }
 
       if (element.nodeName === 'A' && element.attributes.href != null) {
@@ -268,14 +276,14 @@ class RawDraftContent {
     return block
   }
 
-  addInlineStyleRange = inlineStyleRange => {
+  addInlineStyleRanges = inlineStyleRanges => {
     const lastBlock = this.content.blocks[this.content.blocks.length - 1]
 
     if (lastBlock.inlineStyleRanges == null) {
       lastBlock.inlineStyleRanges = []
     }
 
-    lastBlock.inlineStyleRanges.push(inlineStyleRange)
+    lastBlock.inlineStyleRanges = lastBlock.inlineStyleRanges.concat(inlineStyleRanges)
   }
 
   addEntityRange = entity => {
@@ -299,7 +307,7 @@ class RawDraftContent {
         this.addText(element.textContent)
       } else if (parsedTextFragment) {
         if (parsedTextFragment.inlineStyle != null) {
-          this.addInlineStyleRange({
+          this.addInlineStyleRanges({
             style: parsedTextFragment.inlineStyle,
             offset: this.offset,
             length: element.textContent.length
